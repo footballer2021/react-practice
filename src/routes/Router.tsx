@@ -3,13 +3,13 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import Counter1 from '../pages/Counter1';
 
-const homeUrl = process.env.PUBLIC_URL;
+const homeUrl = process.env.PUBLIC_URL || "/";
 
 const Router = () => {
   return (
     <Routes>
-        <Route path={ homeUrl } element={<Home />}/>
-        <Route path={ homeUrl + "/Counter1"} element={<Counter1 />}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/Counter1" element={<Counter1 />}/>
     </Routes>
   )
 }

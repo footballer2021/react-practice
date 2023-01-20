@@ -1,6 +1,8 @@
 import React from 'react'
+import { useCounter } from "../context/CounterContext";
 
-const CounterResult = ({val}:{val:number}) => {
+const CounterResult = () => {
+  const val = useCounter();
   return (
     <>
         <h3>結果:{val}</h3>

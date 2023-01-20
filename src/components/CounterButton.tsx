@@ -1,10 +1,14 @@
 import React from 'react'
-import { EventType } from '../type/EventType';
+import { useCounterDispatch } from '../context/CounterContext';
 
-const CounterButton = ({sign,num,countChange}:{sign:string,num:number,countChange:EventType}) => {
+const CounterButton = ({sign,num}:{sign:string,num:number}) => {
+    const dispatch = useCounterDispatch();
+  const clickHandler = () => {
+    dispatch({sign,num});
+  }
   return (
     <>
-        <button onClick={countChange}>{sign}{num}</button>
+        <button onClick={clickHandler}>{sign}{num}</button>
     </>
   )
 }

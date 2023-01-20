@@ -47,10 +47,10 @@ const Counter1 = () => {
         <h1>Counter1</h1>
         <div>
             <div>
-                <input type="number" name="paypay" value={paypay} onChange={(e) => {paypayCalc(e)}}/>
+                <input type="number" name="paypay" value={paypay} onChange={paypayCalc}/>
             </div>
             <div>
-                <input type="number" name="rakutenpay" value={rakutenpay} onChange={(e) => {rakutenCalc(e)}}/>
+                <input type="number" name="rakutenpay" value={rakutenpay} onChange={rakutenCalc}/>
             </div>
             <select name="calc" onChange={calcChange}>
                 {

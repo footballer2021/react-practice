@@ -1,1 +1,0 @@
-export type EventType = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;

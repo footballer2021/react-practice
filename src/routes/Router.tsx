@@ -9,7 +9,7 @@ const Router = () => {
   return (
     <Routes>
         <Route path={ homeUrl } element={<Home />}/>
-        <Route path={ homeUrl + "/Counter1"} element={<Counter1 />}/>
+        <Route path={ homeUrl + "/react-practice/Counter1"} element={<Counter1 />}/>
     </Routes>
   )
 }

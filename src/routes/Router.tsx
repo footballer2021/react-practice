@@ -8,8 +8,8 @@ const homeUrl = process.env.PUBLIC_URL;
 const Router = () => {
   return (
     <Routes>
-        <Route path={ homeUrl } element={<Home />}/>
-        <Route path={ homeUrl + "/react-practice/Counter1"} element={<Counter1 />}/>
+        <Route path="/" element={<Home />}/>
+        <Route path="/Counter1" element={<Counter1 />}/>
     </Routes>
   )
 }

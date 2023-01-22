@@ -11,6 +11,9 @@ const Home = () => {
         <div>
             <Link to="/Counter2">Counter2</Link>
         </div>
+        <div>
+            <Link to="/Counter3">Counter3</Link>
+        </div>
     </>
   )
 }
